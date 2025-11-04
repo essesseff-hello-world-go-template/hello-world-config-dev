@@ -6,8 +6,8 @@ Helm chart for DEV environment.
 
 - **Environment**: DEV
 - **Auto-Deploy**: Yes (via essesseff)
-- **Namespace**: `dev`
-- **Ingress**: `hello-world-dev.example.com`
+- **Namespace**: `essesseff-hello-world-go-template`
+- **Ingress**: `example.com/hello-world-dev`
 
 ## Updates
 
