@@ -3,6 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ include "hello-world-dev.fullname" . }}
+  namespace: {{ .Values.namespace | default "default" }}
   labels:
     {{- include "hello-world-dev.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
@@ -33,9 +34,10 @@ spec:
             pathType: {{ .pathType }}
             backend:
               service:
-                name: {{ include "hello-world-dev.fullname" $ }}
+                name: {{ include "hello-world-dev.fullname" . }}
                 port:
                   number: {{ $.Values.service.port }}
           {{- end }}
     {{- end }}
 {{- end }}
+
