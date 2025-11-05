@@ -10,8 +10,9 @@ imagePullSecrets: []
 
 serviceAccount:
   create: true
-  annotations: {}
-
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::ACCOUNT:role/ROLE_NAME   # update this with actual AWS IAM role
+    
 podAnnotations:
   prometheus.io/scrape: "true"
   prometheus.io/port: "8080"
