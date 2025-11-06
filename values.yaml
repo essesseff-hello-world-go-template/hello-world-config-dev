@@ -63,11 +63,11 @@ ingress:
       paths:
         - path: /hello-world-dev  # Path-based routing
           pathType: Prefix
-          backend:
-            service:
-              name: hello-world-dev  # Must match your Service name
-              port:
-                number: 80  # Service port (not targetPort)
+  #        backend:
+  #          service:
+  #            name: hello-world-dev  # Must match your Service name
+  #            port:
+  #              number: 80  # Service port (not targetPort)
   
   # TLS configuration (optional - if using ACM certificate)
   # tls:
