@@ -6,7 +6,7 @@ Helm chart for DEV environment.
 
 - **Environment**: DEV
 - **Auto-Deploy**: Yes (via essesseff upon successful code build triggered by source code push)
-- **Namespace**: `essesseff-hello-world-go-template`
+- **Namespace**: `essesseff-hello-world-go-template` (set in the app-of-apps/argocd/hello-world-dev-application.yaml)
 - **Ingress**: `example.com/hello-world-dev`
 
 ## Updates
