@@ -1,4 +1,4 @@
-# Hello World Config - DEV
+# hello-world Config - DEV
 
 Helm chart for DEV environment.
 
